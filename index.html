@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewpart" content="width=device-width, initial-scale=1.0">
+ 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 	<title>Team Squad</title>
+ 	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+ 	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container text-center">
+		<header id="header" class="pt-4 pb-4">
+			<h1>Pakistan Playing 11</h1>
+		</header>
+
+		<div class="row">
+			<div class="col-12 col-md-6">
+				<h2>Add Your Player</h2>
+				<form>
+					<input required type="text" name="playerName" class="form-control mb-4" placeholder="enter name">
+					<input required type="number" name="ranking" class="form-control mb-4" placeholder="enter ranking">
+					<input required type="text" name="batting" class="form-control mb-4" placeholder="enter batting">
+					<input required type="text" name="bowling" class="form-control mb-4" placeholder="enter bowling">
+					<input type="submit" value="Add Player" class="btn btn-primary btn-block mt-4 mb-4">
+				</form>
+				
+			</div>
+			<div class="col-12 col-md-6">
+				<h2>Team Squad</h2>
+				<table class="table table-bordered" id="table">
+					<thead>
+						<tr>
+							<th>Player Name</th>
+							<th>Ranking</th>
+							<th>Batting</th>
+							<th>bowling</th>
+							<th>Action</th>
+						</tr>
+					</thead>
+					<tbody></tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/teamSquad.js"></script>
+	<script src="js/squad.ui.js"></script>
+</body>
+</html>
